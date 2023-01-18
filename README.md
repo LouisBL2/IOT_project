@@ -1,12 +1,12 @@
 # IOT_project
 Controller fourni par l'enseignant puis modifié
-#Préambule 
+# Préambule 
 
 La chaîne de communication commence par la réception des données récupérées par les capteurs d'incendie et de luminosité. Ces données sont ensuite envoyées via radio à une carte réceptrice qui transmettra les données reçues à une carte Lora.
 
 La carte 1 possède le code arduino de récupération des différents capteurs ainsi que l’envoie des données. La carte 2 réceptionne les données et les envoie à la carte Lora.
-#Carte 1
-##Récupération capteur incendie
+# Carte 1
+## Récupération capteur incendie
 <code>
 #define FLAME A0 // definition emplacement capteur
 #define ANALOGPIN A0    //  led capteur
@@ -31,7 +31,7 @@ int fire = digitalRead(FLAME);// variable fire = lecture capteur flamme
 </code>
  
  
-##Récupération capteur luminosité
+## Récupération capteur luminosité
 
 <code>
  #include <Wire.h>            //luminosité
@@ -112,7 +112,7 @@ void loop() {
 </code>
  
  
-#Carte 2
+# Carte 2
 Recepteur radio MRF
 <code>
 include <SPI.h>   // Importation des librairies
