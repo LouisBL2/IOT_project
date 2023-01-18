@@ -113,7 +113,7 @@ void loop() {
  
  
 # Carte 2
-Recepteur radio MRF
+## Recepteur radio MRF
 <code>
 include <SPI.h>   // Importation des librairies
 #include <mrf24j.h>   // Importation des librairies
