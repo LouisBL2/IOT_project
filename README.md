@@ -6,7 +6,7 @@ La chaîne de communication commence par la réception des données récupérée
 
 La carte 1 possède le code arduino de récupération des différents capteurs ainsi que l’envoie des données. La carte 2 réceptionne les données et les envoie à la carte Lora.
 #Carte 1
-Récupération capteur incendie
+##Récupération capteur incendie
 <code>
 #define FLAME A0 // definition emplacement capteur
 #define ANALOGPIN A0    //  led capteur
@@ -31,7 +31,7 @@ int fire = digitalRead(FLAME);// variable fire = lecture capteur flamme
 </code>
  
  
-#Récupération capteur luminosité
+##Récupération capteur luminosité
 
 <code>
  #include <Wire.h>            //luminosité
@@ -73,7 +73,7 @@ void loop()
 
  
  
-# Emetteur radio MRF
+## Emetteur radio MRF
 
 <code>
 include <SPI.h>   // Importation des librairies
