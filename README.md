@@ -31,7 +31,7 @@ int fire = digitalRead(FLAME);// variable fire = lecture capteur flamme
 </code>
  
  
-##Récupération capteur luminosité
+#Récupération capteur luminosité
 
 <code>
  #include <Wire.h>            //luminosité
